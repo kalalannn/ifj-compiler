@@ -1,0 +1,38 @@
+1. <prog>		--> <stat-list> <fn-def-list> <prog>
+2. <prog>		--> $
+3. <stat-list>		--> <stat> EOL <stat-list>
+5. <stat-list>		--> e
+4. <fn-def-list>	--> <fn-def> EOL <fn-def-list>
+6. <fn-def-list>	--> e
+
+7. <fn-def>		--> DEF <fn-head> EOL <stat-list> END
+8. <fn-def>		--> e
+9. <fn-head>		--> ID ( <fn-def-pars> )
+10. <fn-def-pars>	--> <fn-def-par> <fn-def-pars1>
+11. <fn-def-pars1>	--> , <fn-def-par> <fn-def-pars1>
+12. <fn-def-pars>	--> e
+13. <fn-def-pars1>	--> e
+14. <fn-def-par>	--> ID
+
+15. <stat>		--> IF <EXP> THEN EOL <stat-list> ELSE EOL <stat-list> END
+16. <stat>		--> WHILE <EXP> DO EOL <stat-list> END
+17. <stat>		--> ID = <exp-call>
+18. <stat>		--> <exp-call>
+19. <stat>		--> e
+
+20. <exp-call>		--> ID ( <fn-pars> )
+21. <exp-call>		--> ID <fn-pars>
+22. <exp-call>		--> <EXP>
+
+23. <fn-pars>		--> <fn-par> <fn-pars1>
+24. <fn-pars1>		--> , <fn-par> <fn-pars1>
+25. <fn-pars>		--> e
+26. <fn-pars1>		--> e
+27. <fn-par>		--> ID
+28. <fn-par>		--> INTEGER
+29. <fn-par>		--> FLOAT
+30. <fn-par>		--> STRING
+
+e - epsilon pravidlo
+$ - konec souboru
+<EXP> - vyraz, vyhodnoceny precedencni syntaktickou analyzou
