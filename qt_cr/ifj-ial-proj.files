@@ -1,8 +1,5 @@
-../errors.h
-../fronta.h
-../fronta.c
-
 ../main.h
+../errors.h
 ../p2.h
 ../init.h
 ../parser.h
@@ -29,5 +26,3 @@
 ../list.c
 ../expression.c
 ../token_list.c
-
-
