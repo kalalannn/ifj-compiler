@@ -1,31 +1,12 @@
 ../errors.h
 ../fronta.h
 ../fronta.c
-../tests/test.rb
-../tests/1test.rb
-../tests/2test.rb
-../tests/3test.rb
-../tests/4test.rb
-
-../tests/synt_analyza/muj_input10.rb
-../tests/synt_analyza/muj_input11.rb
-../tests/synt_analyza/muj_input12.rb
-../tests/synt_analyza/muj_input13.rb
-../tests/synt_analyza/muj_input14.rb
-../tests/synt_analyza/muj_input15.rb
-../tests/synt_analyza/muj_input2.rb
-../tests/synt_analyza/muj_input3.rb
-../tests/synt_analyza/muj_input4.rb
-../tests/synt_analyza/muj_input5.rb
-../tests/synt_analyza/muj_input6.rb
-../tests/synt_analyza/muj_input7.rb
-../tests/synt_analyza/muj_input8.rb
-../tests/synt_analyza/muj_input9.rb
 
 ../main.h
 ../p2.h
 ../init.h
 ../parser.h
+../gen_exp.h
 ../postfix.h
 ../p.h
 ../scaner.h
@@ -37,6 +18,7 @@
 
 ../main.c
 ../parser.c
+../gen_exp.c
 ../p.c
 ../p2.c
 ../init.c
